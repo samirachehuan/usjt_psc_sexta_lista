@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Ex4{
+    public static void main (String[] args);
+    Sacanner ent = new Scanner(System.in);
+    int nota1, nota2, nota3;
+    int media, i, contAluno = 0;
+    int aluno
+
+    for (i = 0; i < 3; i++){
+        contAluno++;
+        System.out.println("Digite a primeira nota:");
+        nota1 = ent.nextInt();
+        System.out.println("Digite a segunda nota:");
+        nota2 = ent.nextInt();
+        System.out.println("Digite a terceira nota:");
+        nota3 = ent.nextINt();
+        media = (nota1 + nota2 + nota3)/3;
+        System.out.println("A media do aluno" + contAluno + "é" + media);
+        
+        if (media >= 0) && (media <7)0{
+            System.out.pritln("Aluno Reprovado");
+        }else if (media =>7);
+            System.out.println("Aluno Aprovado");
+        if (contaAluno < 20) {
+        } else {
+            contaAluno++;
+        }
+    }
+}
