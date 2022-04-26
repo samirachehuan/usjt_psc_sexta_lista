@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class Ex2{
+    public static void main (String[] args){
+        double numCNH, numMulta, valorMulta;
+        do {
+            numCNH = 
+            Double.parseDouble(JOptionPane.showInputDialog("Digite numero da CNH"));
+            if (numCNH !=0){
+            }
+        }while(numCNH != 0);
+            
+            numMulta = 
+            Double.parseDouble(JOptionPane.showInputDialog("Digite o número de multas do condutor"));
+            if (numMulta == 0){
+                JOptionPane.showMessageDialog(null,"Condutor não possui Multa");
+            } 
+            else if (numMulta > 0){
+                JOptionPane.showMessageDialog(null,"Número de Multas:" + numMulta);      
+                valorMulta = Double.parseDouble(JOptionPane.showInputDialog("Digite Valor da Multa"));
+                }      
+            }
+    }
