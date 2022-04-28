@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 import java.util.Scanner;\
+\
+public class Aula \{\
+    public static void main(String[] args) \{\
+        // Fa\'e7a um algoritmo para ler: a descri\'e7\'e3o do produto (nome), a quantidade adquirida \
+        // e o pre\'e7o unit\'e1rio.\
+        // Calcular e escrever o total (total = quantidade adquirida * pre\'e7o unit\'e1rio), \
+        // o desconto e o total a pagar (total a pagar = total - desconto), sabendo-se que:\
+        // - Se quan>dade <= 5, o desconto ser\'e1 de 2%\
+        // - Se quan>dade > 5 e quan>dade <=10, o desconto ser\'e1 de 3% \
+        // - Se quan>dade > 10 e quan>dade <30, o desconto ser\'e1 de 5% \
+        // - Se quan>dade >= 30 o desconto ser\'e1 de 10%\
+        Scanner ler = new Scanner(System.in);\
+        String nome;\
+        int qtde;\
+        double preco, total;\
+        // Entrada\
+        System.out.println("Informe o nome do produto: ");\
+        nome = ler.next();\
+        \
+        System.out.println("Informe a quantidade do produto: ");  \
+        qtde = ler.nextInt();\
+        \
+        System.out.println("Informe o pre\'e7o: "); \
+        preco = ler.nextDouble();\
+        \
+        total = qtde * preco;\
+        System.out.println("O total \'e9 igual a: "+total);\
+        \
+        if (qtde <= 5)\{\
+            total = total * 0.98;\
+        \}\
+        // (condicao) and (condicao)\
+        //     V      and     V      = V\
+        // idadeG = 17\
+        // nome = "Gabriel"\
+        //  ( (idadadeG == 18) and (nome == "Gabriel") )\
+        //       F             and   V          = F\
+        else if ( (qtde > 5) && (qtde <= 10) )\{\
+            total = total * 0.97;\
+        \}\
+        else if ( (qtde > 10) && (qtde < 30) )\{\
+            total = total * 0.95;\
+        \}\
+        else \{\
+            total = total * 0.90;\
+        \}\
+        System.out.println("O novo total \'e9 igual a: "+total);\
+        \
+    \} \
+\}}
